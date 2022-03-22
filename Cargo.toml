@@ -6,3 +6,15 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+byteorder = "1.2"
+crc = "1.7.0"
+serde = "1"
+serde_derive = "1"
+
+[lib]
+name = "libfrankv"
+path = "src/lib.rs"
+
+[[bin]]
+name = "fkv_mem"
+path = "src/fkv_mem.rs"
